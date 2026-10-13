@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>All the elements</title>
+  </head>
+  <body>
+    <!-- STRUCTURE: header + nav -->
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <a href="#text">Text</a> |
+        <a href="#lists">Lists</a> |
+        <a href="#table">Table</a> |
+        <a href="#bottom">Jump to bottom</a>
+      </nav>
+    </header>
+
+    <!-- STRUCTURE: main (only one per page) -->
+    <main>
+      <!-- TEXT -->
+      <section id="text">
+        <h2>Text elements</h2>
+        <p>
+          I teach <strong>statistics</strong> and I <em>really</em> enjoy
+          <mark>data visualisation</mark>.
+        </p>
+        <p>
+          I used <del>R</del> <ins>Python</ins> for my analyses. A typical
+          first line is <code>import pandas as pd</code>.
+        </p>
+        <p>
+          This is <b>bold</b> and this is <i>italic</i>, purely visual.
+          This <span style="color: crimson;">span</span> colours one word
+          without breaking the line.
+        </p>
+
+        <h3>Subsection (h3)</h3>
+        <h4>Sub-subsection (h4)</h4>
+        <h5>Minor heading (h5)</h5>
+        <h6>Smallest heading (h6)</h6>
+      </section>
+
+      <!-- LISTS -->
+      <section id="lists">
+        <h2>Lists</h2>
+
+        <h3>Hobbies (unordered)</h3>
+        <ul>
+          <li>Reading</li>
+          <li>
+            Music
+            <ul>
+              <li>Jazz</li>
+              <li>Fado</li>
+            </ul>
+          </li>
+          <li>Hiking</li>
+        </ul>
+
+        <h3>Top 3 books (ordered)</h3>
+        <ol>
+          <li>First book</li>
+          <li>Second book</li>
+          <li>Third book</li>
+        </ol>
+      </section>
+
+      <!-- LINKS -->
+      <section id="links">
+        <h2>Links</h2>
+        <p>Same tab: <a href="https://d3js.org">D3</a></p>
+        <p>
+          New tab:
+          <a href="https://react.dev" target="_blank">React</a>
+        </p>
+      </section>
+
+      <!-- IMAGES -->
+      <section id="image">
+        <h2>Image</h2>
+        <img
+          src="https://placehold.co/300x150"
+          alt="Grey placeholder rectangle, 300 by 150 pixels"
+          width="300"
+          height="150"
+        />
+      </section>
+
+      <!-- TABLE -->
+      <section id="table">
+        <h2>Table</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Used for</th>
+              <th>Years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>R</td>
+              <td>Statistics</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Forecasting</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- INTERACTIVE -->
+      <section id="interactive">
+        <h2>Interactive</h2>
+        <details>
+          <summary>Click to reveal more</summary>
+          <p>This text was hidden, with no JavaScript needed.</p>
+        </details>
+      </section>
+
+      <!-- ARTICLE + DIV -->
+      <section id="article">
+        <h2>Article and div</h2>
+        <article>
+          <h3>A short blog post</h3>
+          <p>An article is self-contained: it would make sense on its own.</p>
+        </article>
+        <div style="border: 1px solid gray; padding: 8px;">
+          A div is a generic box with no meaning of its own.
+        </div>
+      </section>
+    </main>
+
+    <!-- STRUCTURE: footer -->
+    <footer>
+      <p id="bottom">You are at the bottom! <a href="#text">Back to top</a></p>
+    </footer>
+  </body>
+</html>
