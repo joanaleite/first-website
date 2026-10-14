@@ -9,5 +9,34 @@
     <p>Hello, World!</p>
     <p>Hello, Again!</p>
     <p>Hello, one more!</p>
+ 
+    <h2>Bar Chart</h2>
+    <div id="chart" style="display: flex; align-items: flex-end; gap: 10px; height: 220px"></div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script>
+      const data = [
+        { name: "A", value: 1 },
+        { name: "B", value: 5 },
+        { name: "C", value: 8 },
+        { name: "D", value: 10 },
+      ];
+ 
+      // Uma <div> por objeto; altura = valor x 20 píxeis
+      d3.select("#chart")
+        .selectAll("div")
+        .data(data)
+        .join("div")
+        .style("width", "60px")
+        .style("height", (d) => d.value * 20 + "px")
+        .style("background-color", "#3498db")
+        .style("color", "white")
+        .style("text-align", "center")
+        .text((d) => d.name);
+    </script>
+
+    <script>
+      console.log("hello!!!")
+    </script>
   </body>
 </html>
