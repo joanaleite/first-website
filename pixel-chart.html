@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pixel chart</title>
+    <style>
+      .pixel {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 2px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pixel chart</h1>
+    <p>Each square's darkness represents a value from the dataset.</p>
+    <div id="chart"></div>
+
+    <script>
+      const data = [10, 50, 30, 80, 60];
+      const chart = document.getElementById("chart");
+
+      data.forEach((value) => {
+        const pixel = document.createElement("div");
+        pixel.className = "pixel";
+        const lightness = 90 - value * 0.8;
+        pixel.style.backgroundColor = `hsl(220, 70%, ${lightness}%)`;
+        pixel.title = `value: ${value}`;
+        chart.appendChild(pixel);
+      });
+    </script>
+  </body>
+</html>
